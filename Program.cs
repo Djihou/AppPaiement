@@ -14,5 +14,13 @@ internal class Program
         Carte2.AfficherDetail();
         Carte3.AfficherDetail();
 
+        Console.WriteLine("**************************");
+        //Création instnces Paypal
+        Paypal paypal1 = new Paypal(100.50, "Visa", "300139241@monboreal.ca");
+        Paypal paypal2 = new Paypal(1000, "Amex", "djihouah@gmail.com");
+        //Afficher à l'écran
+        paypal1.AfficherDetail();
+        paypal2.AfficherDetail();
+
     }
 }
